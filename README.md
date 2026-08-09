@@ -21,43 +21,46 @@ Note: `price` is a **string** in the JSON - convert it to a number before doing 
 
 ### React Fundamentals & Code Quality
 
-- [ ] Built with **Vite + React**
-- [ ] Proper **folder structure** (e.g. `components/`, `pages/`, `context/`)
-- [ ] Broken into **reusable components** (Header, Sidebar, Card, etc.)
-- [ ] **Best code practices**: meaningful names, small focused components, no unused code or files
-- [ ] **`useState`** for interactive UI
-- [ ] **`useEffect`** used correctly (loading the data on mount, proper dependency array)
+- [x] Built with **Vite + React**
+- [x] Proper **folder structure** (e.g. `components/`, `pages/`, `context/`)
+- [x] Broken into **reusable components** (Header, Sidebar, Card, etc.)
+- [x] **Best code practices**: meaningful names, small focused components, no unused code or files
+- [x] **`useState`** for interactive UI
+- [x] **`useEffect`** used correctly (loading the data on mount, proper dependency array)
 
 ### Pages (React Router)
 
-- [ ] **Home** (`/`) - a landing page with whatever relevant content you like (hero, featured items, link to the menu)
-- [ ] **Items** (`/items`) - browse all the items
-- [ ] The items page has **pagination** (client-side)
-- [ ] **Item detail** (`/items/:id`) - clicking any item navigates to its detail view (**URL parameter**)
-- [ ] **Cart** (`/cart`) - a dedicated cart page
-- [ ] **Checkout** (`/checkout`) - with a **Confirm** button (nothing else needed) that **clears the cart and redirects back to Home**
-- [ ] A **404 page** for unknown routes
-- [ ] Navigation through a shared **Header** (no full page reloads)
+- [x] **Home** (`/`) - a landing page with whatever relevant content you like (hero, featured items, link to the menu)
+- [x] **Items** (`/items`) - browse all the items
+- [x] The items page has **pagination** (client-side)
+- [x] **Item detail** (`/items/:id`) - clicking any item navigates to its detail view (**URL parameter**)
+- [x] **Cart** (`/cart`) - a dedicated cart page
+- [x] **Checkout** (`/checkout`) - with a **Confirm** button (nothing else needed) that **clears the cart and redirects back to Home**
+- [x] A **404 page** for unknown routes
+- [x] Navigation through a shared **Header** (no full page reloads)
 
 ### Cart (Context)
 
-- [ ] Cart state lives in a **Context** whose provider wraps all your routes
-- [ ] A **sidebar cart visible on every page**, showing the items in the cart and the total
-- [ ] **Add to cart** from the item detail page
-- [ ] Cart page: view items, **remove** items, see the **total**
-- [ ] Cart **persists on refresh** via `localStorage`
+- [x] Cart state lives in a **Context** whose provider wraps all your routes
+- [x] A **sidebar cart visible on every page**, showing the items in the cart and the total
+- [x] **Add to cart** from the item detail page
+- [x] Cart page: view items, **remove** items, see the **total**
+- [x] Cart **persists on refresh** via `localStorage`
 
 Note: passing props from page to page does not count as Context. At least the sidebar, the detail page, and the cart page must consume it.
 
 ### Hosting & Submission
 
-- [ ] Deployed and **publicly accessible** (Netlify or Vercel)
+- [x] Deployed and **publicly accessible:** https://gimme-coffee.vercel.app/
 - [ ] Refreshing on any route (e.g. `/items/3`) does **not** break the app
-- [ ] Live URL submitted through the **Google Form**
+- [x] Live URL submitted through the **Google Form**
 
 ### Bonus (extra credit)
 
-- [ ] **Favorites** - mark/unmark items as favorites and view them somewhere (a favorites page or section), separate from the cart
+- [x] **Favorites** - mark/unmark items as favorites and view them somewhere (a favorites page or section), separate from the cart
+  - Note: you can mark/unmark an item as favorite in the detail page.
+  - All favorites can seen in the homepage (only displayed when there's at least one favorite) 
+  
 
 ## Hosting
 
